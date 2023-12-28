@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="th-3260084036.jpg">
+  <link rel="stylesheet" href="style.css">
+  <title>Taschenrechner</title>
+</head>
+
+<body>
+  
+  <div class="container">
+    
+    <section class="screen">
+      <input type="text" name = "screen" id="1" oninput="input();" onsubmit = "ent('=');">
+    </section>
+    
+    <section class="calc-buttons">
+      
+      <div class="calc-button-row">
+        
+        <button class="calc-button" onclick="ent('AC')">
+          AC
+        </button>
+        
+        <button class="calc-button" onclick="ent('C')">
+          C
+        </button>
+        
+        <button class="calc-button" onclick="ent('**')">
+          ^
+        </button>
+        
+        <button class="calc-button" onclick="ent('/')">
+          &divide;
+        </button>
+        
+      </div>
+      
+      <div class="calc-button-row">
+        
+        <button class="calc-button" onclick="ent('7')">
+          7
+        </button>
+        
+        <button class="calc-button" onclick="ent('8')">
+          8
+        </button>
+        
+        <button class="calc-button" onclick="ent('9')">
+          9
+        </button>
+        
+        <button class="calc-button" onclick="ent('*')">
+          &times;
+        </button>
+        
+      </div>
+      
+      <div class="calc-button-row">
+        
+        <button class="calc-button" onclick="ent('4')">
+          4
+        </button>
+        
+        <button class="calc-button" onclick="ent('5')">
+          5
+        </button>
+        
+        <button class="calc-button" onclick="ent('6')">
+          6
+        </button>
+        
+        <button class="calc-button" onclick="ent('-')">
+          &minus;
+        </button>
+        
+      </div>
+      
+      <div class="calc-button-row">
+        
+        <button class="calc-button" onclick="ent('1')">
+          1
+        </button>
+        
+        <button class="calc-button" onclick="ent('2')">
+          2
+        </button>
+        
+        <button class="calc-button" onclick="ent('3')">
+          3
+        </button>
+        
+        <button class="calc-button" onclick="ent('+')">
+          &plus;
+        </button>
+        
+      </div>
+      
+      <div class="calc-button-row">
+        
+        <button class="calc-button" onclick="ent('0')">
+          0
+        </button>
+        
+        <button class="calc-button bracket" onclick="ent('(')">
+          (
+        </button>
+        
+        <button class="calc-button bracket" onclick="ent(')')">
+          )
+        </button>
+        
+        <button class="calc-button point" onclick="ent('.')">
+          .
+        </button>
+        
+        <button class="calc-button" id="eq" onclick="ent('=')">
+          &equals;
+        </button>
+        
+      </div>
+      
+    </section>
+    
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

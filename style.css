@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  font-display: swap;
+  background: linear-gradient(to bottom right, #7C80B2, #787FC9, #5F66B2);
+}
+
+.container {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.30);
+  border: solid 1px rgba(255, 255, 255, 0.34);
+  flex-basis: 400px;
+  height: 600px;
+  padding: 20px 35px;
+}
+
+.screen, input {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: solid 1px rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  overflow: auto;
+  text-align: right;
+  font-size: 47px;
+  padding: 20px;
+  width: 326px;
+}
+
+.calc-button-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+
+.calc-button {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: solid 1px rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  font-family: inherit;
+  flex-basis: 20%;
+  height: 65px;
+  font-size: 24px;
+  transition: 45ms ease-out;
+}
+
+.calc-button:last-child {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: solid 1px rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #fff;
+  background: #192171;
+}
+
+.calc-button:active {
+  background-color: #B8BEFF;
+  border-radius: 10px;
+}
+
+.calc-button:last-child:active {
+  background-color: #1D268E;
+}
+
+.point {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bracket {
+  flex-basis: 6.75%;
+  border-radius: 9px;
+}
+
+.bracket:active {
+  border-radius: 6px;
+}
